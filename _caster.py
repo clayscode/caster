@@ -99,6 +99,8 @@ class MainRule(MergeRule):
     'minimize':                     Playback([(["minimize", "window"], 0.0)]),
     'maximize':                     Playback([(["maximize", "window"], 0.0)]),
     "remax":                        R(Key("a-space/10,r/10,a-space/10,x"), rdescript="Force Maximize"),
+    "screen left":                  R(Key("ws-left"), rdescript="Move active window to left screen"),
+    "screen right":                 R(Key("ws-right"), rdescript="Move active window to right screen"),
         
     # passwords
     
