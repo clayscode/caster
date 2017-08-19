@@ -87,6 +87,10 @@ class Python(MergeRule):
         "identity is":                  R(Text(" is "), rdescript="Python: is"),
         "input raw":                    R(Text("raw_input()"), rdescript="Raw Input"),
         "input cooked":                 R(Text("input()"), rdescript="Input"),
+        
+        "new speech script":            R(Text("R(Function(TOKEN),rdescript=\"TOKEN\")"), rdescript="Generate new caster function"),
+        "new speech text":              R(Text("R(Text(\"TOKEN\"), rdescript=\"TOKEN\")"), rdescript="Generate new caster text"),
+        "new speech key":               R(Key("R(Key(\"TOKEN\"), rdescript=\"TOKEN\")"), rdescript="Generate new caster key"),
          
         }
 
