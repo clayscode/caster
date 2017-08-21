@@ -90,7 +90,7 @@ class Python(MergeRule):
         
         "new speech script":            R(Text("R(Function(TOKEN),rdescript=\"TOKEN\")"), rdescript="Generate new caster function"),
         "new speech text":              R(Text("R(Text(\"TOKEN\"), rdescript=\"TOKEN\")"), rdescript="Generate new caster text"),
-        "new speech key":               R(Key("R(Key(\"TOKEN\"), rdescript=\"TOKEN\")"), rdescript="Generate new caster key"),
+        "new speech key":               R(Text("R(Key(\"TOKEN\"), rdescript=\"TOKEN\")"), rdescript="Generate new caster key"),
          
         }
 
